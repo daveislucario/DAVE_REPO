@@ -10,7 +10,7 @@ let userRouter = express.Router();
 
 userRouter.get('/', index)
 userRouter.post('/', create);
-userRouter.delete('/', remove);
+userRouter.delete('/:id', remove);
 userRouter.put('/', update);
     
 
